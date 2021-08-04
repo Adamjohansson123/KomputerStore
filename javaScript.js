@@ -65,14 +65,15 @@ let computers = [];
  * then the button is hidden from the user.
  */
 const displayBalance = () =>{
-    balanceElement.innerText = balance;
-    payElement.innerText = payBalance;
-    loanElement.innerText = loan;
+    balanceElement.innerText = balance + " KR";
+    payElement.innerText = payBalance + " KR";
+    loanElement.innerText = loan + " KR";
     if(loan > 0){
         payLoanButton.style.display = "block";
         loanContainer.style.visibility = "visible";
         workButton.style.marginRight = "5px";
-    }else{
+    }
+    else {
         payLoanButton.style.display = "none";
         loanContainer.style.visibility = "hidden";
         workButton.style.marginRight = "25px";
@@ -106,11 +107,11 @@ const handleWork = () => {
             payBalance -= loan;
             loan = 0;
             payLoanButton.style.display = "none";
-        }else{
+        } 
+        else {
             loan -= payBalance * 0.10;
             payBalance = payBalance * 0.90;
         }
-
     }
     balance += payBalance;
     payBalance = 0;
@@ -124,7 +125,6 @@ const handleWork = () => {
  * then all money (100 %) in that account gets used to repay the loan. The work account is also set to 0 Kr.
  */
 const payLoan = () => {
-    console.log(loan)
     if(payBalance > loan){
         balance += (payBalance - loan);
         loan = 0;
