@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+  <title>Komputer Store</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/stylesheet.css">
+</head>
+<body>
+  <!---------------The Bank-------------->
+  <div class="row">
+    <div class="col-sm-4 ">
+      <div class="container">
+        <h1>Bank</h1>
+        <div class="row">
+          <div class="col-sm-8" style="font-size: 25px;">Balance:</div>
+          <div class="col-sm-4" id="balance" style="font-size: 25px;">0 KR</div>
+          <div id="loanContainer" class="row" style="visibility: hidden; width: 110%;">
+            <div class="col-sm-8" style="font-size: 25px;">Loan:</div>
+            <div class="col-sm-4" id="loan" style="font-size: 25px;">0 KR</div>
+          </div>
+        </div>
+        <div class="bottom">
+          <button class="redButton" style="width: 50%; margin-left: 77px; margin-bottom: 7px;" id="getLoan">Get a loan</button>
+        </div>
+      </div>
+    </div>
+    <!---------------Work-------------->
+    <div class="col-sm-4 ">
+      <div class="container">
+        <h1>Work</h1>
+        <div class="row">
+          <div class="col-sm-8" style="font-size: 25px;">Salary:</div>
+          <div class="col-sm-4" id="pay" style="font-size: 25px;">0 KR</div>
+        </div>
+        <div class="col-sm-12 bottom" style="display: flex;">
+          <button class="yellowButton flex-button" id="bank">Bank</button>
+          <button class="blueButton flex-button" id="work" style="margin-right: 25px;">Work</button>
+          <button class="redButton flex-button" id="payLoan" style="display: none; margin-right: 25px;">Repay loan</button>
+        </div>
+
+      </div>
+    </div>
+    <!---------------Laptops-------------->
+    <div class="col-sm-4">
+      <div class="container">
+        <h1>Laptops</h1>
+        <select name="computersElement" id="computersElement" style="margin-left: 10px; margin-top: 10px;">
+        </select>
+
+        <h3 style="margin-top: 10px; font-size: 20px; margin-left: 10px;">Features:</h3>
+        <div id="computerFeatures" style="font-size: 13px; margin-left: 10px;"></div>
+      </div>
+    </div>
+    <div class="col-sm-12" style="margin-bottom: 50px; margin-top: 5px;">
+      <div class="col-sm-12 container">
+        <div class="row">
+          <div class="col-sm-4 image-wrapper" style="margin-top: 40px;">
+            <img id="computerImage" src="https://noroff-komputer-store-api.herokuapp.com/assets/images/1.png"
+              onerror="this.src='https://noroff-komputer-store-api.herokuapp.com/assets/images/5.png'" height="200px">
+          </div>
+          <div class="col-sm-4">
+            <h4 id="computerTitle"></h4>
+            <div id="description" class="descriptionText"></div>
+          </div>
+          <div class="col-sm-4">
+            <div class="priceText" id="price"></div>
+            <button class="greenButton" id="buy">Buy Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="javaScript.js"></script>
+</body>
+
+</html>

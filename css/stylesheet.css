@@ -1,0 +1,89 @@
+body {
+    background: #90CCF4;
+}
+
+.container{
+    margin: 10px;
+    padding: 10px;
+    height: 330px;
+    position: relative;
+    background-color: snow;
+    width: 100%;
+    border-radius: 40px;
+    border: 1px solid black;   
+}
+
+h1 {
+    margin-left: 10px;
+}
+
+h4 {
+    margin-top: 40px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.row {
+    padding: 20px 5% 0px 5%;
+}
+
+button{
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.bottom{
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+}
+.greenButton{
+    background-color:#4bf1a1;
+    border: 1px solid black;
+    font-weight: bolder;
+    width:100%; 
+    bottom: 0px; 
+    position: absolute;
+    right: 5px;
+}
+.yellowButton{
+    background-color: #F3D150;
+    border: 1px solid black;
+    font-weight: bolder;
+}
+.blueButton{
+    background-color:#5DA2D5;
+    border: 1px solid black;
+    font-weight: bolder;
+}
+.redButton{
+    background-color:#F78888;
+    border: 1px solid black;
+    font-weight: bolder;
+}
+
+.image-wrapper {
+    width: 100%; 
+    height: 100%; 
+}
+
+img {
+    object-fit: contain;
+    width:100%;
+}
+
+.priceText{
+    font-size: 45px;
+    font-weight: bolder;
+    text-align: center;
+    padding: 40px;
+}
+
+.descriptionText {
+    font-size: 15px;
+}
+
+.flex-button{
+    width: 100%;
+    margin: 5px;
+}
