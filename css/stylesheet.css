@@ -27,7 +27,7 @@ h4 {
     padding: 20px 5% 0px 5%;
 }
 
-button{
+button {
     padding: 8px;
     border-radius: 10px;
 }
@@ -37,7 +37,8 @@ button{
     bottom: 20px;
     width: 100%;
 }
-.greenButton{
+
+.greenButton {
     background-color:#4bf1a1;
     border: 1px solid black;
     font-weight: bolder;
@@ -46,17 +47,20 @@ button{
     position: absolute;
     right: 5px;
 }
-.yellowButton{
+
+.yellowButton {
     background-color: #F3D150;
     border: 1px solid black;
     font-weight: bolder;
 }
-.blueButton{
+
+.blueButton {
     background-color:#5DA2D5;
     border: 1px solid black;
     font-weight: bolder;
 }
-.redButton{
+
+.redButton {
     background-color:#F78888;
     border: 1px solid black;
     font-weight: bolder;
