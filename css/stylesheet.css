@@ -1,5 +1,6 @@
 body {
     background: #90CCF4;
+    overflow-x: hidden;
 }
 
 .container{
@@ -24,43 +25,65 @@ h4 {
 }
 
 .row {
-    padding: 20px 5% 0px 5%;
+    padding: 30px 10% 10px 10%;
 }
 
 button {
-    padding: 8px;
+    font-weight: bold;
+    box-shadow: 0 5px lightgray;
+    cursor: pointer;
     border-radius: 10px;
+    height: 40px;
+}
+  
+button:active {
+    box-shadow: 0 2px #888;
+    transform: translateY(2px);
+}
+  
+select {
+    width: 94%;
+    height: 40px;
+    border-radius: 10px;
+    cursor: pointer;
 }
 
-.bottom{
+.bottomContainer{
     position: absolute;
     bottom: 20px;
     width: 100%;
 }
 
-.greenButton {
-    background-color:#4bf1a1;
+.buyButton {
+    background-color:#5DA2D5;
     border: 1px solid black;
     font-weight: bolder;
-    width:100%; 
+    width:70%; 
+    margin-right: 25px;
     bottom: 0px; 
     position: absolute;
     right: 5px;
+    margin-bottom: 30px;
 }
 
-.yellowButton {
+.bankButton {
     background-color: #F3D150;
     border: 1px solid black;
     font-weight: bolder;
 }
 
-.blueButton {
+.flex{
+    width: 100%;
+    margin: 5px;
+}
+
+.workButton {
     background-color:#5DA2D5;
     border: 1px solid black;
     font-weight: bolder;
 }
 
-.redButton {
+.getLoanButton {
     background-color:#F78888;
     border: 1px solid black;
     font-weight: bolder;
@@ -71,23 +94,25 @@ button {
     height: 100%; 
 }
 
+.repayButton {
+    background-color:#F78888;
+    border: 1px solid black;
+    font-weight: bolder;
+}
+
 img {
     object-fit: contain;
     width:100%;
 }
 
-.priceText{
-    font-size: 45px;
+.price{
+    font-size: 40px;
     font-weight: bolder;
     text-align: center;
-    padding: 40px;
+    margin-top: 50px;
+    margin-left: 20px;
 }
 
 .descriptionText {
     font-size: 20px;
-}
-
-.flex-button{
-    width: 100%;
-    margin: 5px;
 }

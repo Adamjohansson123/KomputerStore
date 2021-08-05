@@ -60,11 +60,10 @@ let computers = [];
  * then the button is hidden from the user.
  */
 const displayBalance = () =>{
-    balanceElement.innerText = balance + " KR";
-    payElement.innerText = payBalance + " KR";
-    loanElement.innerText = loan + " KR";
+    balanceElement.innerText = balance + " SEK";
+    payElement.innerText = payBalance + " SEK";
+    loanElement.innerText = loan + " SEK";
     if(loan > 0){
-        payLoanButton.style.display = "block";
         loanContainer.style.visibility = "visible";
         workButton.style.marginRight = "5px";
     }
@@ -78,7 +77,7 @@ const displayBalance = () =>{
 //*********************Work***********************
 
 /**
- * Method to add 100 Kr as salary to the work account everytime the "Work" button is clicked.
+ * Method to add 100 SEK as salary to the work account everytime the "Work" button is clicked.
  */
 const handleWork = () => {
     
@@ -93,7 +92,7 @@ const handleWork = () => {
  * the whole loan is repayed. This also makes the repay button disappear. If the loan is bigger than the amount in the 
  * work account then only 10 % of the money gets used to repay the loan and the rest (90 %) goes into the bank account.
  * If there´s no active loan then the money in the work account transfers straight into the bank account. The bank account
- * then increases with the amount of money which were transfered and the work account gets reset to 0 Kr.  
+ * then increases with the amount of money which were transfered and the work account gets reset to 0 SEK.  
  * 
  */
  const handleBank = () => {
@@ -117,7 +116,7 @@ const handleWork = () => {
 /**
  * Method to repay the loan. If the amount in the work account is bigger than the loan itself then the whole loan is 
  * repayed and the rest of the money is transferred to the bank account. If the work account have less money than the loan
- * then all money (100 %) in that account gets used to repay the loan. The work account is also set to 0 Kr.
+ * then all money (100 %) in that account gets used to repay the loan. The work account is also set to 0 SEK.
  */
 const payLoan = () => {
     if(payBalance > loan){
@@ -203,7 +202,7 @@ const displayComputer = (computer) =>{
     computerImage.src = ApiURL + computer.image;
     computerTitle.innerText = computer.title;
     computerDescription.innerText = computer.description;
-    computerPrice.innerText = computer.price + " KR";
+    computerPrice.innerText = computer.price + " SEK";
 }
 
 /**
