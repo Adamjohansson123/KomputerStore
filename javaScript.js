@@ -18,7 +18,6 @@ const ApiURL = "https://noroff-komputer-store-api.herokuapp.com/"; //URL to conn
 
 let balance = 0;
 let loan = 0;
-let haveBoughtComputer = true;
 let payBalance = 0;
 let computers = [];
 
@@ -36,10 +35,7 @@ let computers = [];
 
     const amount = parseInt(prompt("Please enter the amount of money you wish to loan: "));
 
-    if(haveBoughtComputer != true) {
-        alert("You need to buy a computer before you can take a new loan!")
-    }
-    else if(isNaN(amount)) {
+    if(isNaN(amount)) {
         alert("You need to enter a valid amount!");
     }
     else if(loan > 0){
@@ -53,7 +49,6 @@ let computers = [];
       balance += amount;
       loan = amount;
       payLoanButton.style.display = "block";
-      haveBoughtComputer = false;
     }
 
     displayBalance(); //Calls a method to display the new bank account balance and the amount which were loaned. 
@@ -223,7 +218,6 @@ const buyComputer = () => {
     }else{
         balance -= selectedComputer.price;
         alert("Congratulations! You have successfully bought a new laptop!");
-        haveBoughtComputer = true;
     }
     
     displayBalance(); //Displays the new balance in the bank account
